@@ -44,7 +44,7 @@ int main (int argc, char *argv[]){
   imprimirMatriz(mB, n);
   imprimirMatriz(mC, n);
 
-  /*VERSION CLÁSICA MULTIPLICACION DE MATRICES: mA = mB*Mc*/
+  /*VERSION CLÁSICA MULTIPLICACION DE MATRICES: mA = mB*mC*/
   
   int suma = 0;
   
@@ -58,7 +58,7 @@ int main (int argc, char *argv[]){
     }
   }
 
-  imprimirMatriz(mA, n);
+  imprimirMatriz(mA, n);//Se imprime la matriz resultante
   
   
   printf("\n\n\n... fin del programa\n");
