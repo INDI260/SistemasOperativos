@@ -3,7 +3,7 @@
 * Autor: Alejandro Caicedo
 * Materia: Sistemas Operativos
 * Tema: Asignación de Memoria Dinámica
-*       Asignación de tamañon en Bytes de almacenamiento
+*       Asignación de tamaño en Bytes de almacenamiento
 ***********************************/
 #include <stdlib.h>
 #include <stdio.h>
@@ -14,13 +14,15 @@ int main(int argc, char *argv[]) {
   int *vP2 = calloc(1, sizeof(int[4]));  //Asignación para un vector INT de size 4, inicializada en 0
   int *vP3 = calloc(4, sizeof *vP3);     //Asignación para un vector INT de size 4, inicializada en 0
   
+  /*Impresión del vector vP2*/
   if(vP2){
     for(int i = 0; i < 4; i++)
       printf("vP2[%d]\t == %d\n", i,  vP2[i]);
   }
 
   printf("Se libera la memoria reservada\n");
-
+  
+  /*Liberación de memoria*/
   free(vP1);
   free(vP2);
   free(vP3);
