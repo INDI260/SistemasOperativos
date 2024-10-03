@@ -100,14 +100,14 @@ int main(){
         printf("\n\n");
         
         for(int i = 5; i >= 2; i--)
-        borrarVector(&editor, i);//Se elimina el primer elemento del vector
+          borrarVector(&editor, i);//Se elimina el primer elemento del vector
 
         setVector(&editor, 1, "Buenos");
         addVector(&editor,"Días");//Se reasigna el valor al primer y segundo elementos del vector
 
 
         for (int i = 0; i < totalVector(&editor); i++)
-        printf("%s ", (char *) getVector(&editor, i));//Se imprimen nuevamente los elementos
+          printf("%s ", (char *) getVector(&editor, i));//Se imprimen nuevamente los elementos
         printf("\n");
   
         freeVector(&editor); //Se libera la memoria asignada al vector
