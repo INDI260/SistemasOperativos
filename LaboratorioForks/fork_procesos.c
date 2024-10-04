@@ -5,10 +5,11 @@
 * Tema: Fork de procesos
 * Tópico: Creación de forks a partir de parametros de consola
 ***********************************/
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
+
+#include <stdio.h>//Biblioteca de funciones básicas de c
+#include <stdlib.h>//Bibliotecas adicionales de puntetos, estructuras de datos, contenedores, etc...
+#include <unistd.h>//Biblioteca de comunicación con sistema de unix
+#include <sys/types.h>//Interfaces con todo tipo de sistemas
 
 
 void creacion_fork(int linea){
