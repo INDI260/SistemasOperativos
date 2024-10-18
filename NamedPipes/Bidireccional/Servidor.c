@@ -27,7 +27,7 @@ int main() {
    int read_bytes;//Variable que almacena el numero de bytes que se leen de la FIFO
    
    /* Create the FIFO if it does not exist */
-   mkfifo(FIFO_FILE, S_IFIFO|0640);//SE crea la FIFO con permisos de lectura escritura
+   mkfifo(FIFO_FILE, S_IFIFO|0640);//Se crea la FIFO con permisos de lectura escritura
    strcpy(end, "end");//Se almacena la cadena terminal
    fd = open(FIFO_FILE, O_RDWR);//Se abre la FIFO en modo lectura escritura
    while(1) {//Loop de lectura
