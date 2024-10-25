@@ -1,5 +1,5 @@
 /**********************************
-* Fecha: 03/010/24
+* Fecha: 03/10/24
 * Autor: Alejandro Caicedo
 * Materia: Sistemas Operativos
 * Tema: Named pipes
